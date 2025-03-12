@@ -19,5 +19,8 @@
     "gulp-livereload": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
   }
 }

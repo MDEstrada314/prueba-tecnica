@@ -1,0 +1,1 @@
+let validateForm=e=>!e.name||e.name.length<3?"El nombre debe tener al menos 3 caracteres.":null;export{validateForm};
