@@ -57,7 +57,7 @@ gulp.task("serve", function () {
         server: "./dist",
     });
 
-    gulp.watch("src/styles/*.less", gulp.series("styles"));
+    gulp.watch("src/styles/**/*.less", gulp.series("styles"));
     gulp.watch("src/js/*.js", gulp.series("scripts"));
     gulp.watch("data/test.json", gulp.series("templates", (done) => {
         browserSync.reload();
@@ -68,6 +68,7 @@ gulp.task("serve", function () {
         done();
     }));
 });
+
 
 
 gulp.task("default", gulp.series("styles", "scripts", "templates", "serve"));

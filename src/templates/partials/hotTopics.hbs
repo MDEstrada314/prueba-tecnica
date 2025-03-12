@@ -1,0 +1,22 @@
+<div class="contenedor">
+  {{!-- hotTopics --}}
+  <div class="panel">
+      <h5 class="title">Tendencias:</h5>
+      {{#each hotTopics}}
+      <div class="tendencias   ">
+          <a href="{{url}}" target="{{target}}">{{title}}</a>
+      </div>
+      {{/each}}
+    
+  </div>
+
+  {{!-- redes sociales --}}
+  
+    <div class="redes">
+      {{#each social.[0].items}}
+      <a href=""><img src="{{href}}" alt="" class=""></a>
+      
+      {{/each}}
+    </div>
+ 
+</div>

@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("menu-template").innerHTML,e=Handlebars.compile(e);document.getElementById("menu-container").innerHTML=e({items:[{text:"Inicio",href:"/"},{text:"Noticias",href:"/noticias"},{text:"Contacto",href:"/contacto"}]})}),console.log("menu.js cargado correctamente");
+function toggleMenu(){document.getElementById("menu").classList.toggle("open")}export default toggleMenu();
