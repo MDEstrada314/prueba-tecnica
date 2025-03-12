@@ -18,9 +18,12 @@
     "gulp-less": "^5.0.0",
     "gulp-livereload": "^4.0.2",
     "gulp-uglify": "^3.0.2",
+    "handlebars": "^4.7.7", 
     "hbs": "^4.2.0"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.3"
+    "browser-sync": "^3.0.3",
+    "gulp-hb": "^8.0.0",
+    "gulp-rename": "^2.0.0"
   }
 }
