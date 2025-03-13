@@ -14,13 +14,13 @@
   }
 
   .title {
-    font-size: 15px;
+    font-size: 18px;
     color: #ffffff;
-    margin: 0 2rem;
+    
   }
 
   .tendencias {
-    border-left: 1px solid #ffffff;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
     margin: 2px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
   }
 }
@@ -55,7 +55,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 870px) {
 
   .contenedor {
     flex-direction: column; 
@@ -73,12 +73,12 @@
 
   .tendencias {
     border-left: none; 
-    margin-top: 1rem; 
+    
   }
 
   .tendencias a {
-    font-size: 10px; 
-    margin: 2px 5px; 
+    font-size: clamp(8px, 3vw, 10px);
+   
   }
 
   .redes {
@@ -87,14 +87,14 @@
   }
 
   .redes a {
-    margin: 0 1rem; 
+    margin: 0 0.5rem; 
   }
 }
 
 @media screen and (max-width: 480px) {
   .title {
     font-size: 12px;
-    margin: 0.5rem;
+    
   }
 
   .redes {

@@ -8,7 +8,7 @@ const rename = require("gulp-rename");
 
 
 // Importa la función de carga de datos
-const fetchData = require("./apiData"); 
+const fetchData = require("./apiData.js"); 
 
 // Importa los parciales para ser usados en los templetes
 // y modulariza el html

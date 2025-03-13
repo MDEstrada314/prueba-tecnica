@@ -1,19 +1,20 @@
 @import "./css/menu.less";
 @import "./css/hotTopics.less";
+@import "./css/pageLead.less";
+@import "./css/breadcrumbs.less";
+@import "./css/lead.less";
 
 
 .parent {
     display: grid;
-    grid-template-rows: 12% 7% 15% 5% 65%; 
+    grid-template-rows: 10% auto auto auto 1fr; 
     grid-template-columns: 100%; 
     height: 100vh; 
 }
 
-
 .menu-h {
-    background-color: #f8f9fa;
     padding: 10px;
-}
+}   
 
 
 .hotTopics {
@@ -22,31 +23,37 @@
 }
 
 
-.other-section {
-    padding: 10px;
+.pageLead {
+    width: 100%;
     background-color: #f1f1f1;
+}
+
+.breadcrumbs{
+    padding: 10px;
+}
+
+.lead{
+    padding: 10px;
 }
 
 
 
-/* Versión móvil */
-@media screen and (max-width: 870px) {
 
+
+@media screen and (max-width: 870px) {
     .parent {
         display: grid;
-        grid-template-rows: 12% 10% 15% 5% 65%;
+        grid-template-rows: 10% auto auto auto 1fr;
         grid-template-columns: 100%;
         height: 100vh; 
     }
-
 }
 
 @media screen and (max-width: 480px) {
     .parent {
         display: grid;
-        grid-template-rows: 12% 10% 15% 5% 65%; 
+        grid-template-rows: 10% auto auto auto 1fr; 
         grid-template-columns: 100%;
         height: 100vh; 
     }
-
 }
