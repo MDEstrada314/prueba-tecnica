@@ -7,4 +7,5 @@ package-lock.json
 yarn.lock
 .env
 .DS_Store
-
+README.md
+READMESPANISH.md

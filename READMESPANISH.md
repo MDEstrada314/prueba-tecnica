@@ -31,7 +31,7 @@ Este proyecto es una prueba técnica de front-end que implica la creación de un
 ## 🔧 Instalación y Configuración
 1. Clonar el repositorio:
    ```sh
-   git clone https://github.com/yourusername/prueba-tecnica.git
+   git clone https://github.com/MDEstrada314/prueba-tecnica.git
    cd prueba-tecnica
    ```
 2. Instalar dependencias:

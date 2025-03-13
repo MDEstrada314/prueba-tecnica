@@ -36,11 +36,9 @@
 
     <div class="share-buttons">
       {{#each actions.[0].items}}
-      <button onclick="openShareWindow('{{_template}}', '{{url}}')">
-        {{this.body}}
+      <a href="{{url}}" target="_blank data-social-service="facebook" title="facebook" type="text/html" data-cms-ai="0""> {{this.body}} </a>
+      
        
-       
-      </button>
       {{/each}}
     </div>
   </div>
