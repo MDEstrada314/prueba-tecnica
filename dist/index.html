@@ -13,11 +13,11 @@
 
 <body>
     <div class="parent">
-
+    
         <div class="menu-h">
-            <nav class="navbar   fixed-top">
+            <nav class="navbar  ">
               <div class="container-fluid">
-                <div class="d-flex justify-content-start align-items-center m-4">
+                <div class="d-flex justify-content-start align-items-center ">
                   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -132,14 +132,14 @@
         </div>
 
         <div class="Breadcrumbs">
-              <div class="">
-                  <a href="" target="">Humor</a>
-                  
-                  <a href="" target="">Sospechosamente Light</a>
-                  
-                  <a href="" target="">Tato es el mejor hombre del mundo; por favor, perdónalo</a>
-                  
-                </div>        </div>
+            <div class="rutas">
+              <a href="" target="_blank">Humor</a>
+               &gt; 
+              <a href="" target="_blank">Sospechosamente Light</a>
+               &gt; 
+              <a href="" target="_blank">Tato es el mejor hombre del mundo; por favor, perdónalo</a>
+              
+            </div>        </div>
         
         <div class="lead">
             <div class="contenido">
@@ -152,16 +152,51 @@
                   <h1>Tato es el mejor hombre del mundo; por favor, perdónalo</h1>
                 </div>
                 <div class="subheadllne ">
-                   <h6>A nosotros también nos tocó el despecho, también celebramos pequeños triunfos de la adultez y también a veces nos quedan 3 góticas en el bizcocho.No nos echen la culpa si se vuelven adictos a este podcast.</h6>
+                  <h6>A nosotros también nos tocó el despecho, también celebramos pequeños triunfos de la adultez y también a veces nos quedan 3 góticas en el bizcocho.No nos echen la culpa si se vuelven adictos a este podcast.</h6>
                 </div>
-                <div class="audio">
-                  audio
+            
+                <div class="audio-container">
+                  <button class="play-button" onclick="toggleAudio()">
+                    <img src="https://img.icons8.com/?size=100&id=36067&format=png&color=000000" alt="Play" width="64" height="64">
+                    <div class="tex-title-audio">
+                      <h6>Escuchar audio</h6>
+                      <p>Tr, perdónalo - 2746000 </p>
+            
+                    </div>
+                  </button>
+            
+            
+                  <div class="wave-container">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                  </div>
+            
+                  <audio id="audioPlayer">
+                    <source src="https://traffic.omny.fm/d/clips/1fc614ef-7db7-429f-a252-a989012fd0c6/0698957d-3bf8-4ceb-a451-aeda015e2616/f048be02-cbb1-427d-a1e8-aee301640c97/audio.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el audio.
+                  </audio>
                 </div>
-                <div class="actions">
-                  action
+            
+                <div class="share-buttons">
+                  <button onclick="openShareWindow('/facebook/FacebookShareButton.hbs', 'https://web.facebook.com/share_channel/?type&#x3D;reshare&amp;link&#x3D;https%3A%2F%2Fwww.bumbox.com%2Fstatics%2Fepisodes%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo.html&amp;app_id&#x3D;966242223397117&amp;source_surface&#x3D;external_reshare&amp;display&amp;hashtag')">
+                    Facebook
+                   
+                   
+                  </button>
+                  <button onclick="openShareWindow('/twitter/intent/TwitterTweetButton.hbs', 'https%3A%2FFhumor%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo')">
+                    Tweet
+                   
+                   
+                  </button>
+                  <button onclick="openShareWindow('/whatsapp/WhatsAppShareButton.hbs', 'https%3A%2F%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo')">
+                    WhatsApp
+                   
+                   
+                  </button>
                 </div>
               </div>
-            </div>          </div>
+            </div>        </div>
     </div>
 
      <script src="../js/scripts.js"></script>

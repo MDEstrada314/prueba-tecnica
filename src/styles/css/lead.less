@@ -1,18 +1,143 @@
 .contenido{
     display:flex ;
+    padding: 0 2rem;
+    gap: 1rem;
 
 
     .com1{
         img{
-            width: 40vw;
-            margin: 0 2rem;
+            width: 35vw;
+            margin: 0 1rem;
             border-radius: 12px;
         }
     }
 
     .com2{
         h1{
-            font-size: clamp(16px, 3vw, 24px); /* Mínimo 16px, ideal 3vw, máximo 24px */
+            font-size: clamp(16px, 3vw, 60px); 
+            font-weight: 700;
+            margin: 0 0 1rem 0  ;
+        }
+
+        h6{
+            font-size: clamp(8px, 3vw, 24px);
+            line-height: 1.5;
         }
     }
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// codigo del audio 
+
+
+.play-button {
+    padding: 10px 20px;
+    margin: 2rem 0;
+    width: auto;
+    background-color: #f6e125;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .tex-title-audio{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+ 
+
+    h6{
+        padding: 0;
+        margin: 0;
+        color: black;
+        font-size: clamp(8px, 3vw, 16px); 
+        font-weight: 700;
+        text-align: start;
+    }
+
+    p{
+        padding: 0;
+        margin: 0;
+        color: black;
+       
+
+    }
+
+   
+
+}
+
+.wave-container {
+    display: none; /* Se oculta hasta que el audio empiece */
+    margin-top: 20px;
+    position: relative;
+    height: 40px;
+    width: 100px;
+}
+
+.wave {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background: #007BFF;
+    border-radius: 5px;
+    animation: wave-animation 1s infinite ease-in-out;
+}
+
+.wave:nth-child(1) {
+    left: 10px;
+    animation-delay: 0s;
+}
+
+.wave:nth-child(2) {
+    left: 30px;
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(3) {
+    left: 50px;
+    animation-delay: 0.4s;
+}
+
+
+.action{
+    
+}
+
+@keyframes wave-animation {
+    0%, 100% {
+        height: 10px;
+    }
+    50% {
+        height: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+
+        .com1{
+            img{
+                width: 90%;
+                margin: 0 0.5rem;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .com2{
+        margin: 0 0.5rem;
+    }
+        
 }

@@ -8,13 +8,40 @@
       <h1>{{headline}}</h1>
     </div>
     <div class="subheadllne ">
-       <h6>{{subHeadline}}</h6>
+      <h6>{{subHeadline}}</h6>
     </div>
-    <div class="audio">
-      audio
+
+    <div class="audio-container">
+      <button class="play-button" onclick="toggleAudio()">
+        <img src="https://img.icons8.com/?size=100&id=36067&format=png&color=000000" alt="Play" width="64" height="64">
+        <div class="tex-title-audio">
+          <h6>Escuchar audio</h6>
+          <p>{{audioPlayer.[0].audioTitle}} - {{audioPlayer.[0].audioDuration}} </p>
+
+        </div>
+      </button>
+
+
+      <div class="wave-container">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+      <audio id="audioPlayer">
+        <source src="{{audioPlayer.[0].audioUrl}}" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>
     </div>
-    <div class="actions">
-      action
+
+    <div class="share-buttons">
+      {{#each actions.[0].items}}
+      <button onclick="openShareWindow('{{_template}}', '{{url}}')">
+        {{this.body}}
+       
+       
+      </button>
+      {{/each}}
     </div>
   </div>
-</div>  
+</div>

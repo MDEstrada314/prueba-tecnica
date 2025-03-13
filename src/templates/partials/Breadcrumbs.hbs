@@ -1,6 +1,6 @@
-  <div class="">
-      {{#each breadcrumbs}}
-      <a href="" target="">{{body}}</a>
-      
-      {{/each}}
-    </div>
+<div class="rutas">
+  {{#each breadcrumbs}}
+  <a href="{{this.url}}" target="_blank">{{this.body}}</a>
+  {{#unless @last}} &gt; {{/unless}}
+  {{/each}}
+</div>
