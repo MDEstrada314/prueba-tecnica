@@ -70,3 +70,11 @@ El proyecto usa Gulp para la automatización de tareas:
 - Safari.
 
 
+##  ✨ Beneficios del Proyecto
+📱 Enfoque Mobile-First: Diseño responsivo optimizado para dispositivos móviles.
+⚡ Renderizado Dinámico: Usa Handlebars (hbs) para mostrar datos de una API en tiempo real.
+🔄 Automatización con Gulp: Mejora el flujo de desarrollo con tareas automatizadas.
+🎨 Diseño Atractivo y Moderno: Se ha implementado una interfaz visual agradable y bien estructurada.
+🔥 🔹 ¡Persistencia de Datos! 🔹: No pierdas tiempo buscando dónde te quedaste, la información se mantiene disponible para ti.
+🖱️ Botones Funcionales: Interfaz interactiva con botones intuitivos y fáciles de usar.
+📢 Compartir en Redes Sociales: Comparte contenido de manera rápida y sencilla con un solo clic.
