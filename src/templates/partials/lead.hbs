@@ -11,34 +11,40 @@
       <h6>{{subHeadline}}</h6>
     </div>
 
-    <div class="audio-container">
-      <button class="play-button" onclick="toggleAudio()">
-        <img src="https://img.icons8.com/?size=100&id=36067&format=png&color=000000" alt="Play" width="64" height="64">
-        <div class="tex-title-audio">
-          <h6>Escuchar audio</h6>
-          <p>{{audioPlayer.[0].audioTitle}} - {{audioPlayer.[0].audioDuration}} </p>
-
+    <div class="audio-player">
+      <div class="div-audio">
+        <h3>{{audioPlayer.[0].audioTitle}}</h3>
+        <h4>bumbox</h4>
+        <div class="div-time">
+          <span id="current-time">0:00</span>
+          <span id="duration">0:00</span>
         </div>
-      </button>
-
-
-      <div class="wave-container">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+        <input type="range" id="seek-bar" class="range" value="0">
       </div>
 
-      <audio id="audioPlayer">
-        <source src="{{audioPlayer.[0].audioUrl}}" type="audio/mpeg">
-        Tu navegador no soporta el audio.
-      </audio>
+      <div class="div-play-wave">
+        <button id="play-pause">
+          <img src="https://img.icons8.com/?size=100&id=397&format=png&color=000000" alt="">
+        </button>
+
+        <div class="wave-container">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+
+
+
+      </div>
+      <audio id="audio" src="{{audioPlayer.[0].audioUrl}}"></audio>
     </div>
 
-    <div class="share-buttons">
+
+    <div class="action">
+      <h6>Compartir:</h6>
       {{#each actions.[0].items}}
-      <a href="{{url}}" target="_blank data-social-service="facebook" title="facebook" type="text/html" data-cms-ai="0""> {{this.body}} </a>
-      
-       
+      <a href="{{url}}" target="_blank data-social-service=" facebook" title="facebook" type="text/html" data-cms-ai="0""> {{this.body}} </a>
+   
       {{/each}}
     </div>
   </div>

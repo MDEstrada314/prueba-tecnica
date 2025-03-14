@@ -1,25 +1,25 @@
-.contenido{
-    display:flex ;
+.contenido {
+    display: flex;
     padding: 0 2rem;
     gap: 1rem;
 
 
-    .com1{
-        img{
+    .com1 {
+        img {
             width: 35vw;
             margin: 0 1rem;
             border-radius: 12px;
         }
     }
 
-    .com2{
-        h1{
-            font-size: clamp(16px, 3vw, 60px); 
+    .com2 {
+        h1 {
+            font-size: clamp(16px, 3vw, 60px);
             font-weight: 700;
-            margin: 0 0 1rem 0  ;
+            margin: 0 0 1rem 0;
         }
 
-        h6{
+        h6 {
             font-size: clamp(8px, 3vw, 24px);
             line-height: 1.5;
         }
@@ -28,11 +28,94 @@
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // codigo del audio 
+.audio-player {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(40, 41, 45, 1);
+    border-radius: 5px;
+    color: azure;
+}
 
+#seek-bar {
+    flex-grow: 1;
+}
+
+.div-play-wave {
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    width: 100%;
+    height: 120px;
+    
+
+    #play-pause {
+        height: 100%;
+        border: none;
+        background-color: #f6e12500  ;
+
+        img{
+            width: 40px;
+            height: 40px;
+            filter: invert();
+        }
+        
+    }
+}
+.div-time{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+.div-audio {
+    width: 50%;
+    margin: 0 10px;
+
+
+    h3{
+        margin: 0;
+
+    }
+    h4{
+        font-weight: 100;
+        margin: 0;
+        
+    }
+
+    
+    .range {
+        
+        width: 100%;
+        height: 8px;
+        -webkit-appearance: none;
+        background: #ffffff;
+        outline: none;
+        border-radius: 15px;
+        overflow: hidden;
+        
+      }
+      .range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: rgba(131, 112, 254, 1);
+        cursor: pointer;
+        border: 4px solid rgba(131, 112, 254, 1);
+        box-shadow: -407px 0 0 400px rgba(131, 112, 254, 1);
+      }
+
+   
+
+
+
+
+}
 
 .play-button {
     padding: 10px 20px;
-    margin: 2rem 0;
     width: auto;
     background-color: #f6e125;
     color: white;
@@ -44,37 +127,38 @@
     align-items: center;
     gap: 5px;
 
-    .tex-title-audio{
+    .tex-title-audio {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
- 
 
-    h6{
+
+    h6 {
         padding: 0;
         margin: 0;
         color: black;
-        font-size: clamp(8px, 3vw, 16px); 
+        font-size: clamp(8px, 3vw, 16px);
         font-weight: 700;
         text-align: start;
     }
 
-    p{
+    p {
         padding: 0;
         margin: 0;
         color: black;
-       
+
 
     }
 
-   
+
 
 }
 
 .wave-container {
-    display: none; /* Se oculta hasta que el audio empiece */
-    margin-top: 20px;
+    display: none;
+    margin-top: 2px;
+    margin-left: 20px;
     position: relative;
     height: 40px;
     width: 100px;
@@ -105,14 +189,24 @@
 }
 
 
-.action{
-    
+.action {
+    h6 {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0 2px;
+    }
 }
 
 @keyframes wave-animation {
-    0%, 100% {
+
+    0%,
+    100% {
         height: 10px;
     }
+
     50% {
         height: 40px;
     }
@@ -127,8 +221,8 @@
         gap: 0.2rem;
 
 
-        .com1{
-            img{
+        .com1 {
+            img {
                 width: 90%;
                 margin: 0 0.5rem;
                 border-radius: 5px;
@@ -136,8 +230,8 @@
         }
     }
 
-    .com2{
+    .com2 {
         margin: 0 0.5rem;
     }
-        
+
 }

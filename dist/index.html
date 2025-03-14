@@ -155,39 +155,43 @@
                   <h6>A nosotros también nos tocó el despecho, también celebramos pequeños triunfos de la adultez y también a veces nos quedan 3 góticas en el bizcocho.No nos echen la culpa si se vuelven adictos a este podcast.</h6>
                 </div>
             
-                <div class="audio-container">
-                  <button class="play-button" onclick="toggleAudio()">
-                    <img src="https://img.icons8.com/?size=100&id=36067&format=png&color=000000" alt="Play" width="64" height="64">
-                    <div class="tex-title-audio">
-                      <h6>Escuchar audio</h6>
-                      <p>Tr, perdónalo - 2746000 </p>
-            
+                <div class="audio-player">
+                  <div class="div-audio">
+                    <h3>Tr, perdónalo</h3>
+                    <h4>bumbox</h4>
+                    <div class="div-time">
+                      <span id="current-time">0:00</span>
+                      <span id="duration">0:00</span>
                     </div>
-                  </button>
-            
-            
-                  <div class="wave-container">
-                    <div class="wave"></div>
-                    <div class="wave"></div>
-                    <div class="wave"></div>
+                    <input type="range" id="seek-bar" class="range" value="0">
                   </div>
             
-                  <audio id="audioPlayer">
-                    <source src="https://traffic.omny.fm/d/clips/1fc614ef-7db7-429f-a252-a989012fd0c6/0698957d-3bf8-4ceb-a451-aeda015e2616/f048be02-cbb1-427d-a1e8-aee301640c97/audio.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el audio.
-                  </audio>
+                  <div class="div-play-wave">
+                    <button id="play-pause">
+                      <img src="https://img.icons8.com/?size=100&id=397&format=png&color=000000" alt="">
+                    </button>
+            
+                    <div class="wave-container">
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                    </div>
+            
+            
+            
+                  </div>
+                  <audio id="audio" src="https://traffic.omny.fm/d/clips/1fc614ef-7db7-429f-a252-a989012fd0c6/0698957d-3bf8-4ceb-a451-aeda015e2616/f048be02-cbb1-427d-a1e8-aee301640c97/audio.mp3"></audio>
                 </div>
             
-                <div class="share-buttons">
-                  <a href="https://web.facebook.com/share_channel/?type&#x3D;reshare&amp;link&#x3D;https%3A%2F%2Fwww.bumbox.com%2Fstatics%2Fepisodes%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo.html&amp;app_id&#x3D;966242223397117&amp;source_surface&#x3D;external_reshare&amp;display&amp;hashtag" target="_blank data-social-service="facebook" title="facebook" type="text/html" data-cms-ai="0""> Facebook </a>
-                  
-                   
-                  <a href="https%3A%2FFhumor%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo" target="_blank data-social-service="facebook" title="facebook" type="text/html" data-cms-ai="0""> Tweet </a>
-                  
-                   
-                  <a href="https%3A%2F%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo" target="_blank data-social-service="facebook" title="facebook" type="text/html" data-cms-ai="0""> WhatsApp </a>
-                  
-                   
+            
+                <div class="action">
+                  <h6>Compartir:</h6>
+                  <a href="https://web.facebook.com/share_channel/?type&#x3D;reshare&amp;link&#x3D;https%3A%2F%2Fwww.bumbox.com%2Fstatics%2Fepisodes%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo.html&amp;app_id&#x3D;966242223397117&amp;source_surface&#x3D;external_reshare&amp;display&amp;hashtag" target="_blank data-social-service=" facebook" title="facebook" type="text/html" data-cms-ai="0""> Facebook </a>
+               
+                  <a href="https://x.com/intent/post?url&#x3D;https%3A%2F%2Fwww.bumbox.com%2Fstatics%2Fepisodes%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo.html&amp;text&#x3D;Tato%20es%20el%20mejor%20hombre%20del%20mundo%3A%20por%20favor%2C%20perd%C3%B3nalo" target="_blank data-social-service=" facebook" title="facebook" type="text/html" data-cms-ai="0""> Tweet </a>
+               
+                  <a href="https://api.whatsapp.com/send?text&#x3D;Tato%20es%20el%20mejor%20hombre%20del%20mundo%3A%20por%20favor%2C%20perd%C3%B3nalo%20https%3A%2F%2Fwww.bumbox.com%2Fstatics%2Fepisodes%2Fsospechosamente-light%2Ftato-es-el-mejor-hombre-del-mundo-por-favor-perdonalo.html" target="_blank data-social-service=" facebook" title="facebook" type="text/html" data-cms-ai="0""> WhatsApp </a>
+               
                 </div>
               </div>
             </div>        </div>
