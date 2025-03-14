@@ -1,3 +1,4 @@
+
 .contenido {
     display: flex;
     padding: 0 2rem;
@@ -28,6 +29,16 @@
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // codigo del audio 
+
+.apagar{
+    display: none;
+}
+
+.desaparecer {
+    display: none;
+  }
+
+
 .audio-player {
     display: flex;
     width: 70%;
@@ -37,13 +48,19 @@
     background-color: rgba(40, 41, 45, 1);
     border-radius: 5px;
     color: azure;
+
+    
 }
+
 
 #seek-bar {
     flex-grow: 1;
 }
 
 .div-play-wave {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
     border-radius: 12px;
     width: 100%;
@@ -76,11 +93,13 @@
 
     h3{
         margin: 0;
+        font-size: clamp(16px, 3vw, 30px);
 
     }
     h4{
         font-weight: 100;
         margin: 0;
+        font-size: clamp(8px, 3vw, 20px);
         
     }
 
@@ -147,6 +166,7 @@
         padding: 0;
         margin: 0;
         color: black;
+       
 
 
     }
@@ -156,9 +176,6 @@
 }
 
 .wave-container {
-    display: none;
-    margin-top: 2px;
-    margin-left: 20px;
     position: relative;
     height: 40px;
     width: 100px;
@@ -174,18 +191,59 @@
 }
 
 .wave:nth-child(1) {
+
     left: 10px;
-    animation-delay: 0s;
+    top: 5px;
+    animation-delay: 0.1s;
+    animation-play-state: paused;
+
 }
 
 .wave:nth-child(2) {
+
     left: 30px;
+    bottom: 5px;
+    height: 30px;
     animation-delay: 0.2s;
+    animation-play-state: paused;
+
 }
 
 .wave:nth-child(3) {
+
     left: 50px;
+    bottom: 10px;
+    height: 40px;
+    animation-delay: 0.3s;
+    animation-play-state: paused;
+
+}
+
+.wave:nth-child(4) {
+
+    left: 70px;
+    top: 5px;
+    height: 50px;
     animation-delay: 0.4s;
+    animation-play-state: paused;
+
+}
+
+.wave:nth-child(5) {
+
+    animation-play-state: paused;
+    left: 90px;
+    height: 20px;
+    animation-delay: 0.1s;
+
+}
+
+.wave:nth-child(6) {
+
+    animation-play-state: paused;
+    left: 110px;
+    animation-delay: 0.5s;
+
 }
 
 
@@ -212,9 +270,21 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .audio-player {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: rgba(40, 41, 45, 1);
+        border-radius: 5px;
+        color: azure;
+    }
 
+}
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 855px) {
     .contenido {
         display: flex;
         flex-direction: column;
@@ -234,4 +304,111 @@
         margin: 0 0.5rem;
     }
 
+    .audio-player {
+        display: flex;
+        width: 100%;
+        align-items: start;
+        gap: 10px;
+        padding: 10px;
+        background-color: rgba(40, 41, 45, 1);
+        border-radius: 5px;
+        color: azure;
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    .wave-container {
+        position: relative;
+        height: 40px;
+        width: 120px;
+
+        .wave {
+            position: absolute;
+        width: 10px;
+        height: 40px;
+        background: #007BFF;
+        border-radius: 5px;
+        animation: wave-animation 1s infinite ease-in-out;
+        }
+
+        
+            .wave:nth-child(1) {
+
+                left: 10px;
+                top: 5px;
+                animation-delay: 0.1s;
+                animation-play-state: paused;
+
+            }
+
+            .wave:nth-child(2) {
+
+                left: 25px;
+                bottom: 5px;
+                height: 30px;
+                animation-delay: 0.2s;
+                animation-play-state: paused;
+
+            }
+
+            .wave:nth-child(3) {
+
+                left: 40px;
+                bottom: 10px;
+                height: 40px;
+                animation-delay: 0.3s;
+                animation-play-state: paused;
+
+            }
+
+            .wave:nth-child(4) {
+
+                left: 55px;
+                top: 5px;
+                height: 50px;
+                animation-delay: 0.4s;
+                animation-play-state: paused;
+
+            }
+
+            .wave:nth-child(5) {
+
+                animation-play-state: paused;
+                left: 70px;
+                height: 20px;
+                animation-delay: 0.1s;
+
+            }
+
+            .wave:nth-child(6) {
+
+                animation-play-state: paused;
+                left: 85px;
+                animation-delay: 0.5s;
+
+            }
+    }
+
 }
+
+@media screen and (max-width: 410px) {
+    
+    .wave-container {
+        position: relative;
+        height: 40px;
+        width: 100%;
+
+
+    }
+}
+
+@media screen and (max-width: 389px) {
+    
+    .wave-container {
+        display: none;
+        
+
+    }
+}
+
